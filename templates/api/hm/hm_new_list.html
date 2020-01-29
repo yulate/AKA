@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div style="top: 0">
+    <div align="center">
+        <form action="/api/hm_ss/" method="get" >
+            <input class="form-control" type="text" name="mhname">
+            <input class="btn btn-success" type="submit" value="搜索">
+        </form>
+    </div>
+</div>
+
+<ul>
+    {% for i in new_list %}
+    <li>
+        <a href="/api/hm_show/?url1={{i.url}}">{{i.name}}</a>
+    </li>
+    {% endfor %}
+</ul>
+
+
+</body>
+</html>

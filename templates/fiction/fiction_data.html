@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<script src="https://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
+<link href="https://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+<script src="https://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+<script src="http://39.105.204.201/static/js/Post.js"></script>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>集数列表</h1>
+<hr>
+
+<ul>
+    <li>
+        <a>{{data.name}}</a>
+    </li>
+    <li>
+        <a>status:{{data.status}}</a>
+    </li>
+    <li>
+        <a>author:{{data.author}}</a>
+    </li>
+    <li>
+        <a>time:{{data.time}}</a>
+    </li>
+    <li>
+        <a>introduce:{{data.introduce}}</a>
+    </li>
+    <li>
+        <img src="{{data.cover}}">
+    </li>
+</ul>
+<hr>
+
+<div style="word-wrap:break-word; word-break:break-all; overflow: hidden">
+    {% for message in message %}
+<!--    <a class="btn btn-default" href="/fiction/fiction_show/?xsurl2={{message.url}}">num: {{message.num}}</a>-->
+    <a class="btn btn-default" href="javascript:fiction_data_send('{{message.url}}')">{{message.num}}}</a>
+    <br>
+    {% endfor %}
+</div>
+
+
+</body>
+</html>

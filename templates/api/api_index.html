@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API</title>
+</head>
+<body>
+
+<h1>API开放对接文档：</h1>
+<hr>
+
+<p>邮件接口：</p>
+<ul>
+    <li>
+        请求方式：get<br>
+    </li>
+    <li>请求参数：
+        <ol>
+            <li>title=主题</li>
+            <li>content=内容</li>
+            <li>from=发件人邮箱(不可修改)</li>
+            <li>to=收件人邮箱</li>
+        </ol>
+    </li>
+    <li>
+        请求实例：http://39.105.204.201/api/sendmail/?title=主题&content=内容&from=yfhadmin@163.com&to=2113778814@qq.com
+    </li>
+</ul>
+<hr>
+
+<p>注册接口(有严重风险)：</p>
+<ul>
+    <li>
+        请求方式：get<br>
+    </li>
+    <li>
+        请求参数：
+        <ol>
+            <li>username=用户名</li>
+            <li>password=密码</li>
+            <li>vip=是否vip</li>
+            <li>score=初始积分</li>
+        </ol>
+    </li>
+    <li>
+        请求实例：http://39.105.204.201/api/register/?username=user1&password=123456&vip=False&score=100
+    </li>
+</ul>
+<hr>
+
+<p>登录接口(有严重风险)：</p>
+<ul>
+    <li>
+        请求方式：get<br>
+    </li>
+    <li>
+        请求参数：
+        <ol>
+            <li>username = 用户名</li>
+            <li>password = 密码</li>
+        </ol>
+    </li>
+    <li>
+        请求实例：http://39.105.204.201/api/login/?username=user1&password=123456
+    </li>
+</ul>
+
+
+</body>
+</html>

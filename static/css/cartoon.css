@@ -1,0 +1,33 @@
+/*body,html{*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*    background-color: #5b80b2;*/
+/*}*/
+
+.container {
+    height: 98%;
+    width: 100%;
+}
+
+.img{
+    width: 100%;
+}
+
+.bottoms{
+    text-align: center;
+    bottom: 0;
+    height: 5%;
+    width: 100%;
+}
+
+.list_container{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.list_container_div {
+    height: 30%;
+    width: 20%;
+}

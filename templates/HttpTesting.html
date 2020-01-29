@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>HttpTesting</h1>
+<hr>
+<ul>
+    <li>
+        <a>post</a>
+    </li>
+</ul>
+<form action="/HttpTesting_Post" method="post">
+    {% csrf_token %}
+    <a>url:</a>
+    <input class="form-control" type="url" name="url">
+    <br>
+    <a>value:</a>
+    <input type="text" name="value">
+    <input class="btn btn-success" type="submit" value="Submit">
+</form>
+
+<a>{{req}}</a>
+
+</body>
+</html>

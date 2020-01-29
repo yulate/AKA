@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<script src="https://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
+<link href="https://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+<script src="https://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% autoescape off %}
+<ul>
+    <h1 align="center">{{num}}</h1>
+    <li>
+        <a>{{message}}</a>
+    </li>
+</ul>
+<div align="center" style="bottom: 0">
+    <a class="btn btn-success">下一章</a>
+    <input class="btn btn-success" type="button" name="Submit" onclick="javascript:history.go(-1);" value="目录">
+    <a class="btn btn-success">下一章</a>
+</div>
+{% endautoescape %}
+</body>
+</html>

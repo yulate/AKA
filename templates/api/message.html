@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>留言板</title>
+</head>
+<body>
+<form action="{% url 'api:message' %}" method="post" name="submit">
+    {{form.as_p}}
+    <button name="submit">提交</button>
+</form>
+<ul>
+    {% for message in message_list %}
+    <li>{{message.data_added}}</li>
+    <li>{{message.text}}</li>
+    {% empty %}
+    <li>暂时没有用户留言</li>
+    {% endfor %}
+</ul>
+
+
+</body>
+</html>
